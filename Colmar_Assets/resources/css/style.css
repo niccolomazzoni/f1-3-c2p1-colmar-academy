@@ -1,0 +1,593 @@
+/* Universal Styles */
+body {
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #6534ff;
+}
+
+h2 {
+    font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #4a4a4a;
+}
+
+h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+  font-size: 24px;
+  color: #4a4a4a;
+
+}
+
+p {
+  font-weight: lighter;
+  font-family: "Questrial";
+
+}
+
+html {
+  font-size: 21px;
+}
+
+a {
+  font-family: "Questrial";
+  color: #6534ff;
+}
+
+/* Contenitore Generale */
+
+.contenitoregenerale1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contenitoregenerale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+
+/* Nav */
+
+nav {
+  color: grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  border-bottom: 1px solid;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.logo img {
+height: 32px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+ul li {
+  padding: 8px;
+  color: #6534ff;
+  font-family: "Questrial";
+}
+
+ul li:hover {
+  color: #7ffabd;
+}
+
+.menu {
+  margin-right: 24px;
+}
+
+.navmobile {
+  display: none;
+}
+
+/* Media Nav Mobile*/
+@media only screen and (max-width: 768px) {
+
+nav {
+  display: none;
+}
+
+.navmobile {
+  color: grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  border-bottom: 1px solid;
+
+}
+
+
+}
+
+
+/* Main banner */
+
+.main-banner {
+  display: flex;
+  background-color: #d0f5e3;
+  margin-top: 64px;
+}
+
+.bannerimage {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  margin: 32px 24px 32px 24px;
+}
+
+.bannerimage img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.lancio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.lancio h1 {
+  padding-bottom: 24px;
+}
+
+.lancio h3 {
+  padding-bottom: 24px;
+}
+
+.starthere {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #4a4a4a;
+  width: 360px;
+  color: white;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+
+}
+
+.starthere a{
+  color: #7ffabd;
+}
+
+.startheremobile {
+  display: flex;
+
+}
+
+.starthere:hover {
+  background-color: #6534ff;
+}
+
+/* Media Mani Banner Mobile*/
+@media only screen and (max-width: 768px) {
+
+  .main-banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #d0f5e3;
+    width: 100%;
+  }
+
+  .bannerimage {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .startheremobile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+.lancio {
+  width: 100%;
+}
+
+.lancio h1 {
+  margin: 32px 0 32px 16px;
+}
+
+.lancio h3 {
+  margin: 0 0 24px 16px;
+}
+
+.starthere {
+  width: 60%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 19px;
+}
+
+
+  }
+
+
+/* Second Banner */
+
+.secondbanner {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.practicing {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  overflow: hidden;
+  margin: 32px 24px 32px 24px;
+}
+
+.practicing img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.practicing h1{
+margin: 32px 0 32px 0;
+}
+
+#firma {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.colonna {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-left: 1px solid lightgrey;
+  margin-top: 32px;
+
+}
+
+.pacchetto1 {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  padding-top: 16px;
+  transition-property: background-color;
+transition-duration: 0.5s;
+transition-timing-function: ease-out;
+
+}
+
+.pacchetto1:hover {
+background-color: #7ffabd;
+}
+
+.container {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 11px;
+
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-left: 16px;
+}
+
+.contenuto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+}
+
+.contenuto a {
+  text-decoration: none;
+}
+
+.pacchetto2 {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 16px;
+  transition-property: background-color;
+transition-duration: 0.5s;
+transition-timing-function: ease-out;
+
+}
+
+.pacchetto2:hover {
+background-color: #7ffabd;
+}
+
+
+.pacchetto3 {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+  padding-top: 16px;
+  transition-property: background-color;
+transition-duration: 0.5s;
+transition-timing-function: ease-out;
+
+}
+
+.pacchetto3:hover {
+background-color: #7ffabd;
+}
+
+
+.colonnamobile {
+  display: none;
+}
+
+
+/* Media Second Banner Mobile*/
+@media only screen and (max-width: 768px) {
+
+  .colonna {
+    display: none;
+  }
+
+  .practicing{
+    display: none;
+  }
+
+  .contenuto {
+    margin-bottom: 16px;
+  }
+
+  .colonnamobile:hover {
+  background-color: #7ffabd;
+  }
+
+
+.colonnamobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-left: 1px solid lightgrey;
+  padding: 20px;
+}
+
+.containermobile {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 11px;
+}
+
+.containermobile img {
+  width: 100%;
+}
+
+
+
+}
+
+
+/* Start Learning */
+
+.startlearning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d0f5e3;
+}
+
+
+.titolo {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.startlearning-content {
+  display: flex;
+  justify-content: center;
+  margin-left: 56px;
+  margin-right: 56px;
+
+}
+
+.colonnina {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 16px;
+  color: #6534ff;
+}
+
+.colonnina img {
+  width: 100%;
+  height: auto;
+}
+
+.colonnina h2 {
+  margin-top: 16px;
+margin-left: 16px;
+margin-bottom: 24px;
+color: #7ffabd;
+
+}
+
+.colonnina p {
+margin-left: 16px;
+margin-bottom: 24px;
+}
+
+#marginefinale {
+  margin-bottom: 32px;
+}
+
+.colonnina:hover {
+  transition-property: background-color;
+transition-duration: 1s;
+  background-color: #6534ff;
+  color: white;
+}
+
+
+
+
+
+/* Media Second Banner Mobile*/
+@media only screen and (max-width: 768px) {
+
+.startlearning img {
+  display: none;
+}
+
+.startlearning-content {
+width: 100%;
+}
+
+
+.colonnina p {
+  display: none;
+}
+
+.startlearning-content {
+  flex-direction: column;
+}
+
+}
+
+/* Thesis Exhibit */
+
+.thesisexhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+#giga {
+  cursor: pointer;
+  z-index: 1;
+  transition: font-size 0 ease-in 0;
+}
+
+#giga:hover{
+  font-size: 180px;
+}
+
+.bannervideo {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  margin: 32px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bannervideo video {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.bannervideo h2 {
+  margin: 24px 0 8px 0;
+}
+
+.bannervideo p {
+  margin-bottom: 32px;
+}
+
+
+/* Media Second Banner Mobile*/
+@media only screen and (max-width: 768px) {
+
+.bannervideo h2 {
+  display: none;
+}
+
+.bannervideo p {
+  display: none;
+}
+
+
+.bannervideo {
+  width: 100%;
+}
+
+
+}
+
+/* Footer */
+
+footer {
+  color: grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding-right: 24px;
+}
+
+ul li {
+  padding-right: 8px;
+  font-weight: lighter;
+}
+
+.copy {
+  font-size: 16px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .menu {
+  font-size: 16px;
+}
