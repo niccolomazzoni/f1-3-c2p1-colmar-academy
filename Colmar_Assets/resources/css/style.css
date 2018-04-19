@@ -11,15 +11,15 @@ h1 {
 }
 
 h2 {
-    font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: bold;
   font-size: 32px;
   color: #4a4a4a;
 }
 
 h3 {
-    font-family: "Playfair Display", sans-serif;
-    font-weight: bold;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
   font-size: 24px;
   color: #4a4a4a;
 
@@ -179,7 +179,6 @@ nav {
   transition-property: background-color;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
-
 }
 
 .starthere a{
@@ -188,7 +187,6 @@ nav {
 
 .startheremobile {
   display: flex;
-
 }
 
 .starthere:hover {
@@ -278,24 +276,8 @@ margin: 32px 0 32px 0;
   display: flex;
   flex-direction: column;
   width: 40%;
-  border-left: 1px solid #7ffabd;
   margin-top: 32px;
 
-}
-
-.pacchetto1 {
-  display: flex;
-  width: 100%;
-  border: 1px solid #7ffabd;
-  padding-top: 16px;
-  transition-property: background-color;
-transition-duration: 0.5s;
-transition-timing-function: ease-out;
-
-}
-
-.pacchetto1:hover {
-background-color: #7ffabd;
 }
 
 .container {
@@ -324,38 +306,20 @@ background-color: #7ffabd;
   text-decoration: none;
 }
 
-.pacchetto2 {
+.pacchetto1 {
   display: flex;
   width: 100%;
   border: 1px solid #7ffabd;
   padding-top: 16px;
   transition-property: background-color;
-transition-duration: 0.5s;
-transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 
 }
 
-.pacchetto2:hover {
+.pacchetto1:hover {
 background-color: #7ffabd;
 }
-
-
-.pacchetto3 {
-  display: flex;
-  width: 100%;
-  border: 1px solid #7ffabd;
-  background-color: white;
-  padding-top: 16px;
-  transition-property: background-color;
-transition-duration: 0.5s;
-transition-timing-function: ease-out;
-
-}
-
-.pacchetto3:hover {
-background-color: #7ffabd;
-}
-
 
 .colonnamobile {
   display: none;
@@ -377,7 +341,7 @@ background-color: #7ffabd;
     margin-bottom: 16px;
   }
 
-  .colonnamobile:hover {
+  .colonnamobile_singolo:hover {
   background-color: #7ffabd;
   }
 
@@ -388,6 +352,14 @@ background-color: #7ffabd;
   width: 100%;
   border-left: 1px solid lightgrey;
   padding: 20px;
+}
+
+.colonnamobile_singolo {
+  display: flex;
+  flex-direction: column;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .containermobile {
@@ -444,7 +416,7 @@ background-color: #7ffabd;
 
 .colonnina h2 {
   margin-top: 16px;
-margin-left: 16px;
+  margin-left: 16px;
 margin-bottom: 24px;
 color: #7ffabd;
 
@@ -510,7 +482,7 @@ width: 100%;
 }
 
 #giga:hover{
-  font-size: 180px;
+  font-size: 100px;
 }
 
 .bannervideo {
